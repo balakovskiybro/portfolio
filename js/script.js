@@ -1,24 +1,28 @@
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show');
+    }
+  });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.animation');
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
 function customScrollFunction(id, top) {
-   document.getElementById(id).addEventListener("click", () => {
-     window.scrollTo({
-       top,
-       left: 0,
-       behavior: "smooth",
-     });
-   });
- }
- 
- customScrollFunction("portfolio", 200);
- customScrollFunction("team", 950);
- customScrollFunction("about", 1700);
- customScrollFunction("blog", 4500);
- customScrollFunction("contacts", 4850);
+  document.getElementById(id).addEventListener("click", () => {
+    window.scrollTo({
+      top,
+      left: 0,
+      behavior: "smooth",
+    });
+  });
+}
 
-const play = document.querySelector('.about__play');
-const video = document.querySelector('.about__video video')
-
-play.addEventListener ('click', () => {
-   video.play();
-   video.setAttribute('controls', 'controls');
-   play.classList.add('about__play--hidden');
-})
+customScrollFunction("info", 200);
+customScrollFunction("stack", 800);
+customScrollFunction("works", 1800);
+customScrollFunction("contacts", 2600);
