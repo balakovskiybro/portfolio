@@ -12,22 +12,12 @@ body {
    padding: 0 15px;
 }
 
-.title {
+h1 {
    font-size: 35px;
    padding: 30px 0px;
    font-weight: 700;
    position: relative;
    border-bottom: 2px solid gray;
-   // &::after {
-   //    content: '';
-   //    position: absolute;
-   //    bottom: 0;
-   //    left: 0;
-   //    background-color: gray;
-   //    width: 1000px;
-   //    height: 1.5px;
-   //    margin: 0px 0px;
-   // }
 }
 
 .header {
@@ -100,8 +90,6 @@ body {
 
    &__list {
       display: flex;
-      align-items: center;
-
 
       & li {
          margin-right: 35px;
@@ -128,12 +116,11 @@ body {
 
    &__img {
       box-shadow: 0px 0px 10px black;
-      max-width: 250px;
-      max-height: 250px;
       margin-right: 20px;
       max-width: 100%;
       object-fit: cover;
-
+      width: 250px;
+      height: 250px;
    }
 
    &__body {
@@ -145,20 +132,20 @@ body {
    }
 }
 
-.animation.element-show {
-   opacity: 1;
-   transition: opacity 2s;
-}
+// .animation.element-show {
+//    opacity: 1;
+//    transition: opacity 2s;
+// }
 
 .stack {
    margin-top: 150px;
-   opacity: 0;
+   opacity: 1;
 
    &__items {
       margin-top: 75px;
       display: grid;
       grid-template-columns: repeat(3, minmax(250px, 1fr));
-      row-gap: 50px;
+      row-gap: 100px;
       column-gap: 50px;
       grid-auto-rows: 1fr;
    }
@@ -166,7 +153,6 @@ body {
    &__item {
       display: grid;
       grid-auto-flow: row;
-      grid-template: auto 1fr 40px/1fr;
       margin: 0 auto;
    }
 
@@ -201,16 +187,17 @@ body {
 
 .works {
    margin-top: 150px;
-   opacity: 0;
+   opacity: 1;
+
    &__items {
       margin: 0 15px;
       margin-top: 75px;
-
    }
 
    &__item {
       display: grid;
       grid-template-columns: 170px 1fr;
+      margin-top: 75px;
    }
 
    &__img {
@@ -238,54 +225,107 @@ body {
    }
 }
 
-.contacts {
-   opacity: 0;
-   margin-top: 100px;
-
-   &__items {
-      margin-top: 75px;
-      display: flex;
-      justify-content: space-between;
-      justify-items: center;
-   }
-
-   &__item {
-      display: flex;
-      justify-content: space-between;
-      justify-items: center;
-      margin: 0 25px;
-   }
-
-   &__logo {
-      position: relative;
-      padding: 0 0 0 0;
-      margin: -8px 20px 0 0;
-      user-select: none;
-   }
-
-   &__link {
-      color: gray;
-      font-size: 30px;
-      font-weight: 500;
-
-      &:hover {
-         color: white;
-      }
-
-      &:active {
-         color: black;
-      }
-   }
-}
 
 .footer {
-   display: grid;
-   align-items: center;
-   justify-content: center;
-   padding: 15px;
-   margin: 0;
-   margin-top: 140px;
-   color: rgb(231, 210, 200);
+   margin-top: 100px;
+   background-color: #1d1d1f;
+
+   &__title {
+      padding: 40px 0;
+   }
+
+   &__container {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+   }
+
+   &__top {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   &__list {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+   }
+
+   &__form {
+      width: 100%;
+      position: relative;
+   }
+
+   &__btn {
+      background-color: #1d1d1f;
+      position: absolute;
+      bottom: 24px;
+      right: 0;
+      height: 24px;
+      width: 24px;
+
+      & svg {
+         display: block;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__input {
+      :placeholder {
+         color: grey;
+      }
+
+      border: none;
+      border-bottom: 1px solid grey;
+      padding: 24px 0;
+      padding-right: 30px;
+      width: 100%;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: white;
+      background-color: transparent;
+   }
+
+   &-link {
+      width: 55px;
+      height: 55px;
+      border-radius: 100%;
+      display: block;
+      background-color: rgb(255, 255, 255);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30px auto;
+      opacity: 0.4;
+      transition: opacity 0.3s ease-in-out;
+
+      &-gm {
+         background-image: url("../img/gmail.png");
+      }
+
+      &-tel {
+         background-image: url('../img/telegram.png');
+      }
+
+      &-vk {
+         background-image: url('../img/vk.png');
+      }
+
+      &:hover {
+         opacity: 1;
+      }
+   }
+
+   &__bottom {
+      display: flex;
+      align-items: end;
+      padding-bottom: 20px;
+      justify-content: center;
+   }
 }
 
 .white__line {
