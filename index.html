@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Резюме</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="stylesheet" href="css/media.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
     <div class="container">
       <div class="main__body">
         <section class="info">
-          <h1 class="info__title title">О себе</h1>
+          <h1 class="info__title">О себе</h1>
           <div class="info__container">
             <a href="" class="info__img">
               <img src="img/я того всё.jpg" alt="">
@@ -67,8 +67,8 @@
             </div>
           </div>
         </section>
-        <section class="stack animation">
-          <h2 class="stack__title title">Мой стек технологий</h2>
+        <section class="stack">
+          <h1 class="stack__title">Мой стек технологий</h1>
           <div class="stack__items">
             <div class="stack__item">
               <div class="stack__img">
@@ -108,9 +108,9 @@
             </div>
           </div>
         </section>
-        <section class="works animation">
+        <section class="works">
           <div class="container">
-            <div class="works__title title">Примеры работ</div>
+            <h1 class="works__title">Примеры работ</h1>
             <div class="works__items">
               <div class="works__item">
                 <a href="1/index.html" target="_blank"><img src="img/лендинг1.png" class="works__img" alt=""></a>
@@ -122,38 +122,48 @@
                   </p>
                 </div>
               </div>
+              <div class="works__item">
+                <a href="2/index.html" target="_blank"><img src="img/лендинг2.png" class="works__img" alt=""></a>
+                <div class="works__body">
+                  <h5 class="works__subtitle">Цель:</h5>
+                  <p class="works__text">
+                    Отработать навыки адаптивной верстки, с применением HTML/CSS для создания интерфейса сайта.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-        <section class="contacts animation">
-          <h3 class="contacts__title title">Контакты</h3>
-          <ul class="contacts__items">
-            <li class="contacts__item">
-              <div class="contacts__logo">
-                <img src="img/gmail.png" alt="">
-              </div>
-              <div><a target="_blank" href="mailto: balakovskiybro@gmail.com" class="contacts__link">Gmail</a></div>
-            </li>
-            <li class="contacts__item">
-              <div class="contacts__logo">
-                <img src="img/telegram.png" alt="">
-              </div>
-              <a target="_blank" href="https://t.me/olewwwwwka" class="contacts__link">Telegram</a>
-            </li>
-            <li class="contacts__item">
-              <div class="contacts__logo">
-                <img src="img/vk.png" alt="">
-              </div>
-              <a target="_blank" href="https://vk.com/olewwka" class="contacts__link">Vk</a>
-            </li>
-          </ul>
         </section>
       </div>
     </div>
   </main>
   <footer class="footer">
-    <div class="footer__copy">
-      Designed & Built by Oleg S. Bizyaev © 2023
+    <div class="container">
+      <h1 class="footer__title">Контакты</h1>
+      <div class="footer__container">
+        <div class="footer__top">
+          <ul class="footer__list">
+            <li class="footer-item"><a href="mailto:balakovskiybro@gmail.com" class="footer-link footer-link-gm"
+                target="_blank" aria-label="Link to Gmail"></a></li>
+            <li class="footer-item"><a href="https://t.me/olewwwwwka" class="footer-link footer-link-tel"
+                target="_blank" aria-label="Link to Telegram"></a></li>
+            <li class="footer-item"><a href="https://vk.com/olewwka" class="footer-link footer-link-vk" target="_blank"
+                aria-label="Link to Vk"></a></li>
+          </ul>
+          <form action="#" class="footer__form">
+            <input type="text" name="email" maxlength="1000" class="footer__input" placeholder="Напишите на почту">
+            <a href="mailto:balakovskiybro@gmail.com" target="_blank" class="footer__btn" aria-label="Send E-mail">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M8 5L15 12L8 19" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </form>
+        </div>
+        <div class="footer__bottom">
+          Designed & Built by Oleg S. Bizyaev © 2023
+        </div>
+      </div>
     </div>
   </footer>
   <script src="js/script.js"></script>

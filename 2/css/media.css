@@ -1,0 +1,172 @@
+@media(max-width: 804px) {
+   h2 {
+      font-size: 40px;
+      line-height: 54px;
+   }
+
+   .hero {
+      min-height: 650px;
+   }
+
+   .help {
+      margin-top: 30px;
+   }
+
+   .help__content {
+      padding-left: 10px;
+   }
+
+   .help__grid {
+      column-gap: 70px;
+   }
+
+   .help__author {
+      margin-top: 0;
+   }
+
+   .img {
+      width: 60px;
+      height: 60px;
+   }
+
+   h3 {
+      font-size: 24px;
+      line-height: 40px;
+   }
+
+   .comment {
+      font-size: 1rem;
+      line-height: 30px;
+   }
+
+   .cite {
+      font-size: 14px;
+   }
+
+   .portfolio {
+      margin-top: 100px;
+   }
+
+   .team {
+      margin-top: 100px;
+      top: 0;
+   }
+
+   .team__title {
+      font-size: 30px;
+      line-height: 44px;
+   }
+
+   .privelegy__list {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .footer {
+      padding-top: 50px;
+   }
+
+   .footer__column {
+      margin-top: 20px;
+   }
+
+   .footer-middle {
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .footer-mail {
+      font-size: 1rem;
+   }
+
+   .privelegy {
+      margin-top: 100px;
+   }
+
+   .privelegy-item {
+      padding: 0;
+   }
+
+   .partner {
+      display: none;
+   }
+}
+
+@media(max-width: 426px) {
+   h2 {
+      font-size: 30px;
+      line-height: 44px;
+   }
+
+   .hero {
+      min-height: 550px;
+   }
+
+   .person {
+      display: block;
+   }
+
+   .text {
+      font-size: 10px;
+      line-height: 24px;
+   }
+
+   .comment {
+      font-size: 8px;
+      line-height: 24px;
+   }
+
+   .cite {
+      font-size: 10px;
+   }
+
+   .person {
+      margin-top: 15px;
+   }
+
+   .portfolio__btn {
+      margin-top: 40px;
+   }
+
+   .team__title {
+      font-size: 16px;
+      line-height: 30px;
+      margin-bottom: 0;
+      padding-top: 0;
+   }
+
+   .team__btn {
+      margin-top: 20px;
+      padding-bottom: 20px;
+   }
+
+   h3 {
+      font-size: 16px;
+      line-height: 30px;
+   }
+
+   .privelegy-item__title {
+      font-size: 14px;
+   }
+
+   .privelegy-item__descr {
+      font-size: 10px;
+      line-height: 24px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+
+   .privelegy-item {
+      margin-top: 15px;
+   }
+
+   .team {
+      margin-top: 40px;
+   }
+
+   .footer-middle {
+      column-gap: 20px;
+   }
+
+   .footer-bottom__container {
+      display: block;
+   }
+}
