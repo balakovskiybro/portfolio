@@ -25,4 +25,4 @@ function customScrollFunction(id, top) {
 customScrollFunction("info", 200);
 customScrollFunction("stack", 800);
 customScrollFunction("works", 1800);
-customScrollFunction("contacts", 2600);
+customScrollFunction("contacts", 3400);
