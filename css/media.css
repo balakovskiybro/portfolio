@@ -94,20 +94,6 @@
       line-height: 30px;
    }
 
-   .contacts {
-      margin-top: 60px;
-   }
-
-   .contacts__items {
-      flex-direction: column;
-      margin-top: 50px;
-   }
-
-   .contacts__item {
-      justify-content: unset;
-      margin-bottom: 23px;
-   }
-
    .footer {
       margin-top: 50px;
    }
@@ -116,7 +102,9 @@
       display: grid;
       grid-template-columns: repeat(2, 60px);
    }
-
+   .footer-item-gm{
+      display: -webkit-box;
+   }
    .footer__text {
       font-size: 12px;
    }
