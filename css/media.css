@@ -111,4 +111,13 @@
    .footer {
       margin-top: 50px;
    }
+
+   .footer__list {
+      display: grid;
+      grid-template-columns: repeat(2, 60px);
+   }
+
+   .footer__text {
+      font-size: 12px;
+   }
 }
